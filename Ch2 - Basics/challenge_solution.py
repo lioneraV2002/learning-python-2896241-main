@@ -4,20 +4,20 @@
 
 def is_palindrome(teststr):
     # one way to do it: calculate the reverse of the string
-    # reversestr = ""
-    # strindx = len(teststr)-1
-    # while (strindx >= 0):
-    #     reversestr += teststr[strindx]
-    #     strindx -= 1
+    reversestr = ""
+    strindx = len(teststr)-1
+    while (strindx >= 0):
+        reversestr += teststr[strindx]
+        strindx -= 1
 
-    # if teststr == reversestr:
-    #     return True
-    # return False
-
-    # more advanced: use the slice trick to reverse the string
-    if teststr == teststr[::-1]:
+    if teststr == reversestr:
         return True
     return False
+
+    # more advanced: use the slice trick to reverse the string
+    # if teststr == teststr[::-1]:
+        # return True
+    # return False
 
 
 run = True
